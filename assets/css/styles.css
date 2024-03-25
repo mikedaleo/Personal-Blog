@@ -27,7 +27,7 @@ h2 {
     margin: 15px;
 }
 
-.card input {
+input {
     display: flex;
     background-color: #f1f3f4;
     border-radius: 5px;
