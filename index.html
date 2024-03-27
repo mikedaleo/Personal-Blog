@@ -4,38 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/form.css">
     <title>My Personal Blog</title>
 </head>
-<header>
-    <div>
-        <button></button>
-    </div>
-</header>
 
 <body>
-    <div id="first-blog">
-        <h2>My First Blog</h2>
-    </div>
-    <div class="card">
-        <h2>What's on your mind?</h2>
-        <form action="POST">
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username">
-            </div>
-            <div class="input-group">
-                <label for="title">Title</label>
-                <input type="text" name="title" id="title">
-            </div>
-            <div class="input-group">
-                <label for="comment">Comment</label>
-                <textarea type="text" name="comment" id="comment"></textarea>
-            </div>
-            <button id="submit">Submit</button>
-        </form>
-    </div>
+    <header>
+        <div>
+            <button type="button" id="lightDark">toggle</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="first-blog" class="title">
+            <h2>My First Blog</h2>
+        </div>
+        <div class="card">
+            <h2>What's on your mind?</h2>
+            <form id="blog-form">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div class="input-group">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="title">
+                </div>
+                <div class="input-group">
+                    <label for="comment">Comment</label>
+                    <textarea type="text" name="comment" id="comment"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
     <script src="./assets/js/form.js"></script>
     <script src="./assets/js/logic.js"></script>
 </body>
