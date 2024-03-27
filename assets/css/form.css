@@ -1,42 +1,48 @@
-
-
-.input-group {
+.blog-form{
     display: flex;
+    flex-direction: column;
+    flex: 0 0 80%;
+}
+
+.input-div {
+    margin: 0 0 15px 10px;
+    max-width: 100%;
+    
+
+}
+.input-field {
+    display: flex;
+    border: 2px solid black;
     border-radius: 5px;
-    font-size: 20px;
     line-height: 20px;
-    padding: 8px;
-    max-width: 90%;
-    width:90%;
-    flex-wrap: wrap;
-    margin: 15px;
+    font-size: 15px;
+    padding: 5px;
+    max-width:95%;
+    width: 100%;
 
 }
 
-input {
-    display: flex;
-    background-color: #f1f3f4;
-    border-radius: 5px;
-    font-size: 20px;
-    line-height: 20px;
-    padding: 8px;
-    max-width: 90%;
-    width:90%;
-    flex-wrap: wrap;
+.label-text{
+    font-size:20px;
+    display: block;
+    /* margin-left: 15px; */
 }
-
 
 textarea {
-    display: flex;
-    background-color: #f1f3f4;
-    border-radius: 5px;
-    border: 2px solid black;
-    font-size: 20px;
-    line-height: 20px;
-    padding: 8px;
-    max-width: 90%;
-    width: 90%; 
-    flex-wrap: wrap;
+    height: 75px;
     resize: none;
     font-family: "Overpass", sans-serif
+}
+
+.submit {
+    display:flex;
+    margin: 0 0 15px 10px;
+    flex: 0 0 100%;
+}
+
+.submit button {
+    height: 40px;
+    width: 98%;
+    font-family: "Overpass", sans-serif;
+    font-weight: bold;
 }
