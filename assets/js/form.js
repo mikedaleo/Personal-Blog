@@ -9,12 +9,12 @@ function saveFormData(event) {
 
     const username = document.querySelector('#username').value;
     const title = document.querySelector('#title').value;
-    const comment = document.querySelector('#comment').value;
+    const content = document.querySelector('#content').value;
 
     if (
         !username ||
         !title ||
-        !comment
+        !content
     ) { 
         msg.textContent = "Please complete the form.";
         card.appendChild(msg);
@@ -26,7 +26,7 @@ function saveFormData(event) {
     const userObj = {
         username: username,
         title: title,
-        comment: comment
+        content: content
     }
 
     saveToStorage(userObj)

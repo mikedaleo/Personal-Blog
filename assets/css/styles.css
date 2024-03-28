@@ -1,18 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     font-size: 16px;
     font-family: "Overpass", sans-serif;
     background-color: #eff5f8;
 }
 
-header{
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
     border-bottom: 3px solid black;
-    padding: 30px;
+    height: 70px;
     margin-bottom: 5px;
 }
 
-main{
-   display: flex; 
-   border-top: 3px solid black;
+header button.toggle {
+    background-color: black;
+    color: white;
+    font-family: "Overpass", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    border-top: 3px solid black;
 }
 
 .title {
@@ -22,7 +39,6 @@ main{
     border-right: 3px solid black;
     margin-right: 5px;
     justify-content: center;
-    /* align-items: center; */
 }
 
 .title h2 {
@@ -35,25 +51,49 @@ main{
     width: 300px;
     border-radius: 50%;
 }
+
 .title h2 span {
+    color: white;
     text-align: center;
 }
 
-/* h2 {
-    text-align: center;
-    font-size: 30px;
-} */
-
 .card {
-    /* margin: 5px; */
     border-left: 3px solid black;
     flex: 0 0 50%;
     flex-wrap: wrap;
-} 
+}
 
 .card h2 {
     text-align: center;
     font-size: 30px;
 }
 
+body.dark {
+    background-color: black;
+    color: white;
+}
 
+header.dark {
+    border-bottom: 3px solid white;
+}
+
+header button.toggle.dark {
+    background-color: white;
+    color: black;
+}
+
+main.dark {
+    border-top: 3px solid white;
+}
+
+.title h2 span.dark {
+    color: black;
+}
+
+.title.dark {
+    border-right: 3px solid white;
+}
+
+.card.dark {
+    border-left: 3px solid white;
+}

@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/blog.css">
     <title>My First Blog</title>
 </head>
-<header>
-    <h1>My First Blog</h1>
-    <button><a href="./index.html">↩Back</a></button>
-   <button>Light Mode</button>
-</header>
+
 <body>
-    
-    
+    <header>
+        <h1>My First Blog</h1>
+        <div>
+            <button type="button" class="back" id="back">↩Back</button>
+            <button type="toggle" id="toggle" class="toggle">Dark Mode</button>
+        </div>
+    </header>
+    <main>
+        <div id="blogs" class="blogs"></div>
+    </main>
+    <footer>
+        <p class="signature">Made by Michael Daleo</p>
+        <a class="link" href="https://mikedaleo.github.io/mike-daleo-portfolio/">My Portfolio</a>
+    </footer>
+    <script src="./assets/js/blog.js"></script>
 </body>
+
 </html>
