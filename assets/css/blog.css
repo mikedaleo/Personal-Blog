@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 16px;
+    font-family: "Overpass", sans-serif;
+    background-color: #eff5f8;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid black;
+    height: 70px;
+    margin-bottom: 5px;
+}
+
+
+header button.back {
+    font-family: "Overpass", sans-serif;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+header button.toggle {
+    background-color: black;
+    color: white;
+    font-family: "Overpass", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.blogs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    height: 175px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px;
+}
+
+.blog-post .title {
+    font-weight: 900;
+    margin: 5px 0 0 10px;
+}
+
+.blog-post hr {
+    box-shadow: 10px 5px 5px gray;
+    border: 1px solid black;
+    margin: 2px 15px 15px 15px;
+}
+
+.blog-post .content {
+    margin: 10px 10px 10px 30px;
+    font-style: italic;
+}
+
+.blog-post .author {
+     
+    margin:0;
+    color: darkslategray;
+    position: relative;
+    top: 55px;
+    left: 5px;
+}
+
+footer {
+    border-top: 3px solid black;
+    margin-top: 5px;
+    text-align: center;
+}

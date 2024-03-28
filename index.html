@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/form.css">
     <title>My Personal Blog</title>
 </head>
 
-<body>
+<body id='dark'>
     <header>
         <div>
-            <button type="button" id="lightDark">toggle</button>
+            <button type="toggle" id="toggle" class="toggle">Dark Mode</button>
         </div>
     </header>
 
@@ -23,7 +23,7 @@
         <div id="first-blog" class="title">
             <h2><span>My First Blog</span></h2>
         </div>
-        <div class="card">
+        <div class="card" id="card">
             <h2>What's on your mind?</h2>
             <form id="blog-form" class="blog-form">
                 <div class="input-div">
@@ -35,11 +35,11 @@
                     <input type="text" name="title" id="title" class="input-field">
                 </div>
                 <div class="input-div">
-                    <label for="comment" class="label-text">Comment</label>
-                    <textarea type="text" name="comment" id="comment" class="input-field"></textarea>
+                    <label for="content" class="label-text">Content</label>
+                    <textarea type="text" name="content" id="content" class="input-field"></textarea>
                 </div>
                 <div class="submit">
-                    <button type="submit">Submit</button>
+                    <button type="submit" id="submit">Submit</button>
                 </div>
             </form>
         </div>
