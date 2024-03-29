@@ -15,23 +15,23 @@ function saveFormData(event) {
         !username ||
         !title ||
         !content
-    ) { 
+    ) {
         msg.textContent = "Please complete the form.";
         card.appendChild(msg);
         msg.setAttribute('style', 'color: red; text-align: center');
-    
+
     } else {
-       
 
-    const userObj = {
-        username: username,
-        title: title,
-        content: content
+
+        const userObj = {
+            username: username,
+            title: title,
+            content: content
+        }
+
+        saveToStorage(userObj)
+        location.href = './blog.html'
     }
-
-    saveToStorage(userObj)
-    location.href= './blog.html'
-}
 }
 // this function recieves the object as userObj and then the object is pushed into the the storageData array
 function saveToStorage(userObj) {

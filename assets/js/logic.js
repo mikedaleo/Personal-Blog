@@ -1,5 +1,7 @@
+// toggles dark and light mode on the form page with the button
+
 function toggleMode() {
-    const darkMode = document.getElementById('dark');
+    const body = document.querySelector('body');
     const header = document.querySelector('header');
     const main = document.querySelector('main');
     const span = document.querySelector('span');
@@ -7,7 +9,7 @@ function toggleMode() {
     const submitButton = document.querySelector('#submit');
     const title = document.querySelector('#first-blog');
     const card = document.querySelector('#card');
-    darkMode.classList.toggle('dark');
+    body.classList.toggle('dark');
     header.classList.toggle('dark');
     main.classList.toggle('dark');
     span.classList.toggle('dark');
@@ -17,13 +19,13 @@ function toggleMode() {
     card.classList.toggle('dark');
 
 
-    
-    if (toggle.textContent === "Dark Mode") {
-        toggle.textContent = "Light Mode";
+
+    if (toggle.textContent === "🌞") {
+        toggle.textContent = "🌒";
     } else {
-        toggle.textContent = "Dark Mode";
+        toggle.textContent = "🌞";
     }
-   
+
 }
 
 const toggleBtn = document.getElementById('toggle');
