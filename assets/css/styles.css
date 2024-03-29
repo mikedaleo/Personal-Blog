@@ -1,3 +1,5 @@
+/* styles for the form webpage */
+
 * {
     box-sizing: border-box;
 }
@@ -15,7 +17,6 @@ header {
     justify-content: flex-end;
     align-items: center;
     border-bottom: 3px solid black;
-    height: 70px;
     margin-bottom: 5px;
 }
 
@@ -25,6 +26,7 @@ header button.toggle {
     font-family: "Overpass", sans-serif;
     font-weight: bold;
     cursor: pointer;
+    margin: 10px;
 }
 
 main {
@@ -68,6 +70,8 @@ main {
     font-size: 30px;
 }
 
+
+/* Dark mode styling */
 body.dark {
     background-color: black;
     color: white;

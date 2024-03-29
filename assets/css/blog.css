@@ -1,3 +1,4 @@
+/* styles for the blogs page */
 * {
     box-sizing: border-box;
 }
@@ -15,7 +16,6 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 3px solid black;
-    height: 70px;
     margin-bottom: 5px;
 }
 
@@ -34,6 +34,7 @@ header button.toggle {
     font-family: "Overpass", sans-serif;
     font-weight: bold;
     cursor: pointer;
+    margin: 10px;
 }
 
 header h1 {
@@ -56,11 +57,11 @@ main {
 .blog-post {
     display: flex;
     flex-direction: column;
-    height: 175px;
     border: 2px solid black;
     border-radius: 10px;
     width: 100%;
     margin: 10px;
+    justify-content: space-around;
 }
 
 .blog-post .title {
@@ -69,8 +70,8 @@ main {
 }
 
 .blog-post hr {
-    box-shadow: 10px 5px 5px gray;
-    border: 1px solid black;
+    box-shadow: 10px 5px 5px lightgray;
+    border: 1px solid gray;
     margin: 2px 15px 15px 15px;
 }
 
@@ -80,16 +81,48 @@ main {
 }
 
 .blog-post .author {
-     
-    margin:0;
+    margin: 0 0 0 10px;
     color: darkslategray;
-    position: relative;
-    top: 55px;
-    left: 5px;
 }
 
 footer {
     border-top: 3px solid black;
     margin-top: 5px;
     text-align: center;
+}
+
+footer a {
+    color: black;
+}
+
+/* Dark mode styling */
+body.dark {
+    background-color: black;
+    color: white;
+}
+
+header.dark {
+    border-bottom: 3px solid white;
+}
+
+header button.back.dark {
+    background-color: white;
+    color: black;
+}
+
+header button.toggle.dark {
+    background-color: white;
+    color: black;
+}
+
+main.dark {
+    border-top: 3px solid white;
+}
+
+#blogs.dark>* {
+    border: 2px solid white;
+}
+
+footer a.dark {
+    color: white;
 }
